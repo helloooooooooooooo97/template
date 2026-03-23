@@ -1,0 +1,50 @@
+{
+    // 实验规模
+    "n_fields": 1000,
+    "noise_rate": 0.2,
+    "n_trials": 5,
+    "rng_seed": 42,
+    // Pointwise 对照组：每个字段独立带噪观测
+    "pointwise": {
+        "noise_scale": 0.4 // 得分噪声幅度 ±0.2
+    },
+    // ROMVI 幂迭代参数
+    "romvi": {
+        "max_iter": 200,
+        "alpha": 0.98, // 随机游走重启概率，稀疏图保证连通
+        "tol": 1e-9
+    },
+    // ROMVI-Plus：锚点校准
+    "romvi_plus": {
+        "n_anchors": 10,
+        "anchor_weight": 1.0
+    },
+    // 采样级别：n_fields=1000 时满量为 C(1000,2)=499500
+    // 复杂度：满量时 O(N²)，10万规模不可行；论文的 Top-K 传播将询问数降至 O(N log N)
+    "sampling_levels": [
+        {
+            "name": "极稀疏级",
+            "p_percent": 0.05,
+            "n_pairs": 25000
+        },
+        {
+            "name": "标准级",
+            "p_percent": 0.1,
+            "n_pairs": 50000
+        },
+        {
+            "name": "高密度级",
+            "p_percent": 0.5,
+            "n_pairs": 250000
+        },
+        {
+            "name": "极限级",
+            "p_percent": 1.0,
+            "n_pairs": 499500
+        }
+    ],
+    "output": {
+        "figures_dir": "figures",
+        "results_path": "results.json"
+    }
+}
