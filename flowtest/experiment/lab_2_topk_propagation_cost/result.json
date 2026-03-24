@@ -1,0 +1,9 @@
+{
+  "hypothesis": "H2",
+  "mean_tau_random": 0.30276094276094284,
+  "mean_tau_propagate": 0.30804040404040406,
+  "std_tau_random": 0.05024345270002207,
+  "std_tau_propagate": 0.05825515393132139,
+  "h2_propagate_better": true,
+  "seeds": 30
+}

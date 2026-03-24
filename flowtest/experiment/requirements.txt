@@ -1,0 +1,2 @@
+# 已弃用集中依赖：请使用各 lab 目录内 requirements.txt（hypothesis-experiment-lab 规约）。
+# 例如：lab_1_pairwise_vs_pointwise/requirements.txt

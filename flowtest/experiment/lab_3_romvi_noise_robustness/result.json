@@ -1,0 +1,30 @@
+{
+  "hypothesis": "H3",
+  "mean_tau_romvi": 0.5489717514124294,
+  "mean_tau_netwins": 0.7605875706214689,
+  "std_tau_romvi": 0.03972349128461806,
+  "std_tau_netwins": 0.02734989910533221,
+  "h3_romvi_better_or_tie": false,
+  "seeds": 25,
+  "noise_sweep": [
+    {
+      "noise_flip_ratio": 0.12,
+      "mean_tau_romvi": 0.5489717514124294,
+      "mean_tau_netwins": 0.7605875706214689,
+      "h3_romvi_better_or_tie": false
+    },
+    {
+      "noise_flip_ratio": 0.28,
+      "mean_tau_romvi": 0.43421468926553675,
+      "mean_tau_netwins": 0.615864406779661,
+      "h3_romvi_better_or_tie": false
+    },
+    {
+      "noise_flip_ratio": 0.45,
+      "mean_tau_romvi": 0.135954802259887,
+      "mean_tau_netwins": 0.20447457627118643,
+      "h3_romvi_better_or_tie": false
+    }
+  ],
+  "h3_any_noise_romvi_wins": false
+}
