@@ -96,7 +96,7 @@ Imagine a publication-quality scientific figure that infers the dominant figure 
 ```text
 Imagine a publication-quality scientific figure for a computer science / data governance paper, designed as a high-end Nature-style methodological overview schematic on a white background.
 
-The figure should infer the dominant figure type as a multi-panel workflow-and-mechanism diagram, not a biological illustration. It should visually explain a large-scale database field sensitivity ranking framework based on Pairwise comparison, Top-K semantic propagation, and ROMVI-based global consistency correction.
+The figure should infer the dominant figure type as a multi-panel workflow-and-mechanism diagram. It should visually explain a large-scale database field sensitivity ranking framework based on Pairwise comparison, Top-K semantic propagation, and ROMVI-based global consistency correction.
 
 Panel A: Problem setting and motivation.
 Show a large database schema containing many heterogeneous fields (for example: user_id, phone, zipcode, address, purchase_history, diagnosis_code, device_id), with sensitivity levels L1–L5 represented as an ordered scale.
@@ -142,7 +142,7 @@ Use abstract, publication-safe performance visuals rather than overly detailed p
 The result message should clearly state improved robustness, consistency, scalability, and interpretability.
 
 Visual style requirements:
-- Benchmark the visual language of Nature / Cell / Nature Machine Intelligence figures, but adapted for AI systems and data governance research.
+- Benchmark the visual language of Nature / Nature Machine Intelligence figures, but adapted for AI systems and data governance research.
 - Use a clean modular multi-panel composition labeled A–F.
 - White background, crisp vector style, journal-ready at single-column readability.
 - Use a colorblind-friendly palette: blue for semantic encoding / embeddings, orange for pairwise comparison, green for globally consistent ranking output, red only for conflicts or hallucination-induced cycles, and neutral gray for structural database elements.
