@@ -1,0 +1,19 @@
+{
+  // 随机种子基；会与 run 内 seed 偏移叠加
+  "rng_seed": 0,
+  // 字段数（合成）
+  "n_items": 80,
+  // Pairwise 预算：随机对的条数（与 Pointwise 的 n_items 次「调用」可比时需在文中说明）
+  "n_pairwise_samples": 400,
+  // 成对结果随机翻转概率（模拟 LLM 幻觉）
+  "pairwise_flip_prob": 0.08,
+  // Pointwise：真分归一化后加噪标准差，再量化到 n_bins 档
+  "pointwise_noise_std": 0.35,
+  "n_bins": 5,
+  // 重复实验次数（不同子种子）
+  "n_seeds": 20,
+  "output": {
+    "result_json": "result.json",
+    "figure_dir": "figures",
+  },
+}
